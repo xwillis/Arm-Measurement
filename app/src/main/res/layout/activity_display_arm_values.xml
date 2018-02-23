@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.txbdc.upperlimbathomerehabilitationsystem.DisplayArmValues"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shoulder Rotation"
+        android:id="@+id/label_shoulder_rotation"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_shoulder_rotation"
+        android:id="@+id/seekbar_shoulder_rotation"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shoulder Abduction"
+        android:layout_below="@+id/seekbar_shoulder_rotation"
+        android:id="@+id/label_shoulder_abduction"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_shoulder_abduction"
+        android:id="@+id/seekbar_shoulder_abduction"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shoulder Flexion"
+        android:layout_below="@+id/seekbar_shoulder_abduction"
+        android:id="@+id/label_shoulder_flexion"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_shoulder_flexion"
+        android:id="@+id/seekbar_shoulder_flexion"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elbow Flexion"
+        android:layout_below="@+id/seekbar_shoulder_flexion"
+        android:id="@+id/label_elbow_flexion"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_elbow_flexion"
+        android:id="@+id/seekbar_elbow_flexion"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wrist Supination"
+        android:layout_below="@+id/seekbar_elbow_flexion"
+        android:id="@+id/label_wrist_supination"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_wrist_supination"
+        android:id="@+id/seekbar_wrist_supination"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wrist Flexion"
+        android:layout_below="@+id/seekbar_wrist_supination"
+        android:id="@+id/label_wrist_flexion"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_wrist_flexion"
+        android:id="@+id/seekbar_wrist_flexion"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wrist Deviation"
+        android:layout_below="@+id/seekbar_wrist_flexion"
+        android:id="@+id/label_wrist_deviation"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/label_wrist_deviation"
+        android:id="@+id/seekbar_wrist_deviation"/>
+
+</RelativeLayout>
