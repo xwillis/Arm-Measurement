@@ -1,4 +1,4 @@
-package com.txbdc.upperlimbathomerehabilitationsystem;
+package com.txbdc.armmeasurement;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.txbdc.upperlimbathomerehabilitationsystem">
+    package="com.txbdc.armmeasurement">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -12,18 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DisplayArmValues">
+        <activity android:name="com.txbdc.armmeasurement.DisplayArmValues">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DisplayFingerValues" />
-        <activity android:name=".SplashPage" />
-        <activity android:name=".ConnectDevices" />
-        <activity android:name=".ListDevices" />
-        <activity android:name=".References"></activity>
+        <activity android:name="com.txbdc.armmeasurement.DisplayFingerValues" />
+        <activity android:name="com.txbdc.armmeasurement.SplashPage" />
+        <activity android:name="com.txbdc.armmeasurement.ConnectDevices" />
+        <activity android:name="com.txbdc.armmeasurement.ListDevices" />
+        <activity android:name="com.txbdc.armmeasurement.References"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.txbdc.upperlimbathomerehabilitationsystem;
+package com.txbdc.armmeasurement;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
