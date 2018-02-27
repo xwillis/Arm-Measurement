@@ -1,5 +1,6 @@
 package com.txbdc.armmeasurement;
 
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
@@ -9,18 +10,22 @@ import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ListDevices extends AppCompatActivity {
+public class ListDevices extends Activity {
     private ListView btDevices;
     private ArrayList<String> nearbyDevices=new ArrayList<String>();
     private BluetoothAdapter btFinder;
+    private ArrayAdapter<String> adapter;
     private Button cancel;
     private Button select;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +39,24 @@ public class ListDevices extends AppCompatActivity {
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(mReceiver, filter);
 
+        btDevices.setOnItemClickListener(new OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?>adapter, View v, int position){
+                ItemClicked item = adapter.getItemAtPosition(position);
+
+                Intent intent = new Intent(Activity.this,destinationActivity.class);
+                //based on item add info to intent
+                startActivity(intent);
+            }
+        })
+
     }
 
     private void BindViews() {
         btDevices=findViewById(R.id.available_bt_devices);
         cancel=findViewById(R.id.cancel_bt_connection_btn);
         select=findViewById(R.id.select_bt_connection_btn);
+
 
     }
 
