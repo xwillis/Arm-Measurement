@@ -20,4 +20,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="http://www.androidhive.info/2012/09/android-adding-search-functionality-to-listview/"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://stackoverflow.com/questions/4709870/setonitemclicklistener-on-custom-listview"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://stackoverflow.com/questions/16636752/android-button-onclicklistener"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://stackoverflow.com/questions/27301164/cannot-resolve-symbol-onclicklistener"/>
 </LinearLayout>

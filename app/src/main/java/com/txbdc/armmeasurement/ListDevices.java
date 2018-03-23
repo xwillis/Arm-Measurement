@@ -18,7 +18,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ListDevices extends Activity {
+public class ListDevices extends Activity{
     private ListView btDevices;
     private ArrayList<String> nearbyDevices=new ArrayList<String>();
     private BluetoothAdapter btFinder;
@@ -39,16 +39,38 @@ public class ListDevices extends Activity {
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(mReceiver, filter);
 
-        btDevices.setOnItemClickListener(new OnItemClickListener(){
+        btDevices.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
-            public void onItemClick(AdapterView<?>adapter, View v, int position){
-                ItemClicked item = adapter.getItemAtPosition(position);
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id){
+                Object listItem=btDevices.getItemAtPosition(position);
 
-                Intent intent = new Intent(Activity.this,destinationActivity.class);
-                //based on item add info to intent
-                startActivity(intent);
             }
-        })
+        });
+        cancel.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                //return to main screen
+
+                // Perform action on click
+                //Intent activityChangeIntent = new Intent(ListDevices.this, NextActivity.class);
+
+                // currentContext.startActivity(activityChangeIntent);
+
+                //ListDevices.this.startActivity(activityChangeIntent);
+            }
+        });
+        select.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //bind device and return to main screen
+
+                // Perform action on click
+                //Intent activityChangeIntent = new Intent(ListDevices.this, NextActivity.class);
+
+                // currentContext.startActivity(activityChangeIntent);
+
+                //ListDevices.this.startActivity(activityChangeIntent);
+            }
+
+        });
 
     }
 
@@ -56,8 +78,6 @@ public class ListDevices extends Activity {
         btDevices=findViewById(R.id.available_bt_devices);
         cancel=findViewById(R.id.cancel_bt_connection_btn);
         select=findViewById(R.id.select_bt_connection_btn);
-
-
     }
 
 
