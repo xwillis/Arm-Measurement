@@ -8,19 +8,22 @@
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/top_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_gravity="top"
-        android:src="@drawable/top_logo"
-        android:id="@+id/top_logo"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/top_logo" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bottom_logo"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView" />
 
 
 </RelativeLayout>

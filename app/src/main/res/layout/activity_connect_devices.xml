@@ -16,15 +16,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="-220dp"
         android:text="Shoulder"
         android:onClick="goToSelectBT"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="-70dp"
         android:layout_marginRight="60dp"
         android:text="Bicep"
         android:onClick="goToSelectBT"/>
@@ -32,23 +32,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginBottom="-150dp"
+        android:layout_marginRight="70dp"
         android:text="Wrist"
         android:onClick="goToSelectBT"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="-200dp"
+        android:layout_marginRight="70dp"
         android:text="Hand"
         android:onClick="goToSelectBT"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="-240dp"
+        android:layout_marginLeft="70dp"
         android:text="Fingers"
         android:onClick="goToSelectBT"/>
 </FrameLayout>
