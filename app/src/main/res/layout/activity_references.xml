@@ -33,4 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="https://stackoverflow.com/questions/27301164/cannot-resolve-symbol-onclicklistener"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://stackoverflow.com/questions/3333658/how-to-make-a-vertical-seekbar-in-android"/>
 </LinearLayout>
